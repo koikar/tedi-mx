@@ -1,5 +1,10 @@
 {
   "buildCommand": "cd ../.. && turbo run build --filter={apps/web}...",
   "installCommand": "cd ../.. && bash clone-marketing.sh && pnpm install",
-  "ignoreCommand": ""
+  "ignoreCommand": "",
+  "functions": {
+    "apps/web/app/api/chat/route.ts": {
+      "maxDuration": 120
+    }
+  }
 }
